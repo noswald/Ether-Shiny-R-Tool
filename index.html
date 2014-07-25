@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Ether Valuation Tool</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Simple Ether Valuation Tool">
+  <meta name="author" content="Nick Oswald">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Simple Ether Valuation Tool</h1>
+    <h2>Version 1.0</h2>
+    <p>Nick Oswald<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Why Ethereum and Why this app?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Cryptographically Secure Decentralized Platform and Strong Team</li>
+<li>Hype, More Background on cryptocurrencies</li>
+<li>Why the app?</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Cryptographically Secure, Decentralized Trust, Strong Team</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The power of Bitcoin and other Blockchain technologies is the concept of decentralized trust.
+Whereas traditionally people would trust escrow services (when buying a home), banks (for storing and transferring money),
+and the legal system to enforce laws, decentralized applications allow people to interact directly with each other while
+using the power of cryptography to secure transactions.</p>
+
+<p>Whereas Bitcoin is seen primarily as a decentralized currency independent of any government, Ethereum strives to be 
+a platform for building any type of decentralized application. Examples could include cryptocurrencies, a decentralized
+DropBox, escrow services, smart contracts that execute automatically and precisely following code, etc.</p>
+
+<p>Unlike Bitcoin (whose create remains anonymous), everyone knows the team that has created Ethereum. The chief software architect
+is a Thiel Fellow (Peter Thiel, the co-founder of PayPal), and the team includes Prof. Merkel, one of the world&#39;s experts in cryptography.
+As of 7/24, the team has raised over $4M in less than 48 hours towards completion of the project.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Strong Team / My tool</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Venture Capitalists, developers, crypto-currencies enthusiasts and others have all talked highly about this project and look forward to its success.</p>
+
+<p>For more information on Bitcoin and Ethereum, you can go to the following websites:</p>
+
+<p><a href="http://www.bitcoin.org">http://www.bitcoin.org</a>
+<a href="http://www.ethereum.org">http://www.ethereum.org</a></p>
+
+<p>My tool is a simple one that will allow someone using some basic parameters to estimate their potential rate of return on an Ethereum investment.
+This tool is valuable since this project is very new and people do not know how to value something like this.
+However, since the software isn&#39;t even fully created yet, this is very speculative.
+The team is raising money to help get this towards completion (like <a href="http://www.kickstarter.com">http://www.kickstarter.com</a>)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Why my tool?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>My tool takes four inputs and calculates the expected return over a time period specified by the user. The main function calculates the ending value of one&#39;s initial investment using the following formula: (ethercount<em>dollaretherprice)</em>(1+annualPctInc)<sup>Yrs</sup> </p>
+
+<p>Below is an example calculation and output:</p>
+
+<pre><code class="r">set.seed(1234)
+ethercount = 2000
+dollaretherprice = 10
+annualPctInc = 0.05
+Yrs = 5
+output = (ethercount*dollaretherprice)*(1+annualPctInc)^Yrs
+print(output)
+</code></pre>
+
+<pre><code>## [1] 25526
+</code></pre>
+
+<p>Depending on what users want, additional graphs and functionality can be added.</p>
+
+<p>Any suggestions about the app (if you liked it or not) can be emailed to me directly at <a href="mailto:nick.oswald@gmail.com">nick.oswald@gmail.com</a></p>
+
+<p>Enjoy!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Why Ethereum and Why this app?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Cryptographically Secure, Decentralized Trust, Strong Team'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Strong Team / My tool'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Why my tool?'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
